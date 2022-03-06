@@ -4,10 +4,12 @@ Well_done = 900000
 Medium = 600000
 Cooked_constant = 0.05
 
-def is_cooked_criteria_satisfied(time, temperature, pressure, desired_state):
-    current_state = time * temperature * pressure * Cooked_constant
-    if desired_state == 'weel-done' and current_state >= Well_done:
+def is_cookeding_criteria_satisfied(time, temperature, pressure, desired_state):
+    if desired_state == 'well-done' and cook_state(time, temperature, pressure) >= Well_done: 
         return True
-    if desired_state == 'medium' and current_state >= Medium:
+    if desired_state == 'medium' and cook_state(time, temperature, pressure) >= Medium:
         return True
     return False
+
+def cook_state(time, temperature, pressure):
+    return time * temperature * pressure * Cooked_constant  
