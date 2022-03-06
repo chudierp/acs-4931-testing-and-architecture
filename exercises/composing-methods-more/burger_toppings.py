@@ -1,18 +1,19 @@
 # by Kami Bigdely
 # Split temporary variable
 
-patty = 70 # [gr]
-pickle = 20 # [gr]
-tomatoes = 25 # [gr]
-lettuce = 15 # [gr]
-buns = 95 # [gr]
-Ny_burger_weight = (2 * patty + 4 * pickle + 3 * tomatoes + 2 * lettuce
-                + 2 * buns)
-print("NY Burger Weight", Ny_burger_weight)
-kimchi = 30 # [gr]
-mayo = 5 # [gr]
-golden_fried_onion = 20 # [gr]
-Seoul_kimchi_burger_weight = (2 * patty + 4 * pickle + 3 * tomatoes 
-                + kimchi + mayo + golden_fried_onion + 2 * buns)
-print("Seoul Kimchi Burger Weight", Seoul_kimchi_burger_weight)
+patty_weight = 70 # [gr]
+pickle_weight = 20 # [gr]
+tomatoes_weight = 25 # [gr]
+lettuce_weight = 15 # [gr]
+buns_weight = 95 # [gr]
+ny_burger_weight = (2 * patty_weight + 4 * pickle_weight + 3 * tomatoes_weight + 2 * lettuce_weight
+                + 2 * buns_weight)
+print("ny burger weight", ny_burger_weight)
+
+kimchi_weight = 30 # [gr]
+mayo_weight = 5 # [gr]
+golden_fried_onion_weight = 20 # [gr]
+seoul_kimchi_burger_weight = (2 * patty_weight + 4 * pickle_weight + 3 * tomatoes_weight 
+                + kimchi_weight + mayo_weight + golden_fried_onion_weight + 2 * buns_weight)
+print("seoul kimchi burger weight", seoul_kimchi_burger_weight)
 
