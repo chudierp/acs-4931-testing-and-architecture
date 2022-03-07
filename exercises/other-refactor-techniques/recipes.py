@@ -16,14 +16,21 @@ foods = {'butternut squash soup':[45, True, 'soup','North African',\
                 'seasoning 3. Add all the content to a sausage stuffer. Put the casing on'
                 "the stuffer funnel. Rotate the stuffer's handle (or turn it on) to make your yummy sausages!"]}
 
-for key, value in foods.items():
+def print_food():
     print("Name:",key)
     print("Prep time:",value[0], "mins")
     print("Is Veggie?", 'Yes' if value[1] else "No")
     print("Food Type:", value[2])
     print("Cuisine:", value[3])
+
+def print_separate_foods():
     for item in value[4]:
         print(item, end=', ')
     print()
     print("recipe", value[5])
     print("***")
+
+
+for key, value in foods.items():
+    print_food()
+    print_separate_foods()
